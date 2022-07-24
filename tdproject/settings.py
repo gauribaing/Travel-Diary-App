@@ -135,8 +135,8 @@ SESSION_EXPIRE_AS_BROWSER_CLOSE = True
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = "587"
-EMAIL_HOST_USER = "bbangtang130613"
-EMAIL_HOST_PASSWORD = "sobpkthydbmlxmpw"
+EMAIL_HOST_USER = " your host username "
+EMAIL_HOST_PASSWORD = " your host password"
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL =False
 
