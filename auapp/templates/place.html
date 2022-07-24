@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1> Search for the Places to Visit Next </h1>
+	<form method = "POST">
+		{% csrf_token %}
+		<input type="text" name="city" placeholder="Enter City" required>
+		<br><br>
+		<input type="submit" value="Show on Map">
+	</form>
+	{{ msg | safe }}
+
+{% endblock %}

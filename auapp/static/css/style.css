@@ -1,0 +1,57 @@
+* {
+	font-family: Comic Sans MS;
+	font-size: 30px;
+}
+		
+.nav { 
+	background-color: #459f47;
+	height: 50px; 
+	padding-top: 15px;
+}
+		
+.nav a { 
+	color: white; 
+	text-decoration: None; 
+	padding: 40px; 
+	font-size:25px; 
+	font-weight: bold; 
+}
+
+.tl{
+	font-family: Comic Sans MS; 
+	color: Blue;
+	padding-top: 30px;
+}
+
+.view {
+	font-family: Comic Sans MS; 
+	color: Blue;
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+input {
+	font-size: 25px;
+}
+
+.btn {
+	background-color: #459f47; 
+	border: 1px solid black;
+	font-size: 30px;
+}
+
+.btn a {
+	color: white;
+	text-decoration: None;
+}
+
+th, td {
+	padding: 20px;
+	font-size: 30px;
+}
+
+
+
+table {
+	border: 2px solid #459f47;
+}

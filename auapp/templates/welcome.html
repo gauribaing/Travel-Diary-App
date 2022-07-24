@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> My Diary </h1>	
+	<br>
+
+	<table>
+		<tr>
+			<th> Sr no </th>
+			<th> Destination </th>
+			<th> Date </th>
+			<th> View </th>
+			<th> Delete </th>
+		</tr>
+	{% for d in data %}
+		<tr>
+			<td> {{ d.srno }} </td>
+			<td> {{ d.Destination}} </td>
+			<td> {{ d.Date }} </td>
+			<td> <button class="btn"> <a href={% url 'result' id=d.srno %}> View </a> </button> </td>
+			<td> <button class="btn"> <a href="{% url 'remove' id=d.srno %}" onclick="return confirm('Are you sure??')"> Delete </a> </button> </td>
+		</tr>
+	{% endfor %}
+	</table>
+
+
+{% endblock %}

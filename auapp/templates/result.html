@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="view">{{ data.Destination }}, {{ data.Date }}</h1>
+
+<br><br>
+<img src="/media/{{data.Pic}}" style="width: 50%; height: auto;"> </img>
+
+<h3> {{ data.Text }}</h3>
+
+
+
+{% endblock %}

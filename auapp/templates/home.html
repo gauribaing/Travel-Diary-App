@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="tl">
+<h1> EXPLORE. CREATE. INSPIRE.</h1>
+<h3> Don’t let beautiful memories fade. Create your own travel journal! </h3>
+</div>
+
+<br>
+<h1> Login </h1>
+<div class="f">
+<form method = "POST">
+	{% csrf_token %}
+	<input type="text" name="un" placeholder="Enter Username" required>
+	<br><br>
+	<input type="password" name="pw" placeholder="Enter password" required>
+	<br><br>
+	<input type="submit" value="Login" style="color: white; background-color: #459f47; border: 1px solid black;">
+	<form>
+	{{ msg }}
+</div>
+
+{% endblock %}
